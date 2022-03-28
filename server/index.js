@@ -4,10 +4,7 @@ const port = 8080;
 
 app.post('/getConnection', (req, res) => {
   console.log('Here');
-  res.json({
-    statusCode: 200,
-    status: 'OK',
-  });
+  res.redirect('/');
 });
 
 app.listen(port, () => {
