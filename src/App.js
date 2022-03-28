@@ -1,6 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 
+import ApiService from './services/ApiService';
+
+function handleClick() {
+  console.log('handle click');
+  ApiService.handlePost();
+}
+
 function App() {
   return (
     <div className="App">
@@ -17,9 +24,9 @@ function App() {
         >
           Learn React
         </a>
-        <form action="getConnection" method="post" className="form">
-          <button type="submit">Connected?</button>
-        </form>
+        <button onClick={handleClick} type="submit">
+          Connected?
+        </button>
       </header>
     </div>
   );
