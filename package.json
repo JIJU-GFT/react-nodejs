@@ -6,6 +6,7 @@
         "@testing-library/jest-dom": "^5.16.3",
         "@testing-library/react": "^12.1.4",
         "@testing-library/user-event": "^13.5.0",
+        "body-parser": "^1.19.2",
         "express": "^4.17.3",
         "nodemon": "^2.0.15",
         "react": "^17.0.2",
@@ -16,7 +17,7 @@
     },
     "scripts": {
         "start": "react-scripts start",
-        "serve": "node server/index.js",
+        "serve": "clear && node server/index.js",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",

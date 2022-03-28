@@ -4,8 +4,11 @@ import logo from './logo.svg';
 import ApiService from './services/ApiService';
 
 function handleClick() {
-  console.log('handle click');
-  ApiService.handlePost();
+  let dummyPayload = {
+    field1: 'Dummy',
+    field2: 'content',
+  };
+  ApiService.handlePost(dummyPayload);
 }
 
 function App() {
